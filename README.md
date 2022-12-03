@@ -12,7 +12,7 @@
 **Note:** Download an Arch Linux iso file from the download link below
 https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/
 
-![](1.png)
+![](image/1.png)
 
 **IMPORTANT** It has to be one file in .iso at the end.
 
@@ -20,43 +20,43 @@ https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/
 
 - Give whatever name you like but make the type is Linux
 
-![](2.png)
+![](image/2.png)
 
 - Set a memory size, you can set 2048MB if you have enough room
 
-![](3.png)
+![](image/3.png)
 
 - Hard disk: as default: create a hard disk now, no need to change
 
-![](4.png)
+![](image/4.png)
 
 - Hard disk type: also leave as default
 
-![](5.png)
+![](image/5.png)
 
 ## Storage on physical hard disk we choose:
 
 `Fixed size`
 
-![](6.png)
+![](image/6.png)
 
 - File location and size
 
-![](7.png)
+![](image/7.png)
 
 - Create and done
 
-![](8.png)
+![](image/8.png)
 
 ## open the setting of the new VM you created
 
 - At `storage` choose the iso file you download before and import it.
 
-![](9.png)
+![](image/9.png)
 
 ## Start your VM
 
-![](10.png)
+![](image/10.png)
 
 ## Set the console keyboard layout
 
@@ -66,29 +66,29 @@ https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/
 # ls /usr/share/kbd/keymaps/**/*.map.gz
 ```
 
-![](11.png)
+![](image/11.png)
 
 - The default is `US` we just leave as default
 
-![](12.png)
+![](image/12.png)
 
 ## Vertify the boot mode
 
 `# ls /sys/firmware/efi/efivars`
 
-![](13.png)
+![](image/13.png)
 
 ## Connect to the internet
 
 `# ip link`
 
-![](14.png)
+![](image/14.png)
 
 ## Update the system clock
 
 `# timedatectl status`
 
-![](15.png)
+![](image/15.png)
 
 ## Partition the disks
 
@@ -98,7 +98,7 @@ https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/
 
 `# fdisk /dev/the_disk_to_be_partitioned`
 
-![](16.png)
+![](image/16.png)
 
 ## Format the partitions
 
@@ -128,45 +128,45 @@ https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/
 
 `# genfstab -U /mnt >> /mnt/etc/fstab`
 
-![](17.png)
+![](image/17.png)
 
 - Chroot
 
 `# arch-chroot /mnt`
 
-![](18.png)
+![](image/18.png)
 
 - Timezone
 
 `# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime`
 `# hwclock --systohc`
 
-![](19.png)
+![](iamge/19.png)
 
 ## Localization
 
 - `sudo vim /etc/locale.gen` edit this file and uncomment this
 
-![](20.png)
+![](iamge/20.png)
 
-![](21.png)
+![](image/21.png)
 
 - Create file `sudo vim /etc/locale.conf`
 
-![](22.png)
+![](image/22.png)
 
-![](23.png)
+![](image/23.png)
 
 ## Add new user and set password
 
-![](26.png)
+![](image/26.png)
 
 ## Reboot
 
 **NOTE** before you doing reboot, you need to remove the disk
 
-![](25.png)
+![](image/25.png)
 
 - Finally do reboot command and done!
 
-![](24.png)
+![](image/24.png)
