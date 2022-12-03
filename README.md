@@ -2,9 +2,9 @@
 
 ## Completed by Hao Li
 
-## This README.MD guides you how to Install a base Arch Linux OS using the official Arch Linux installation guide:
+- This README.MD guides you how to Install a base Arch Linux OS using the official Arch Linux installation guide:
 
-## Resources/Technologies Used
+- Resources/Technologies Used
 
 - Vitural box
 - Arch Linux
