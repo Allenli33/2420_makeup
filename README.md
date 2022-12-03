@@ -1,6 +1,6 @@
 # ACIT 2420 Linux Makeup Assignment
 
-Completed by Hao Li
+## Completed by Hao Li
 
 ## This README.MD guides you how to Install a base Arch Linux OS using the official Arch Linux installation guide:
 
@@ -10,7 +10,7 @@ Completed by Hao Li
 - Arch Linux
 
 **Note:** Download an Arch Linux iso file from the download link below
-[(https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/)]
+https://mirror.csclub.uwaterloo.ca/archlinux/iso/2022.12.01/
 
 ![](1.png)
 
